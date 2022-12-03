@@ -188,10 +188,10 @@ while 1
             if gameover && cakaj_pred_restartom == 1    
                 pokuta = 0;
                 if fall_to_bottom || fall_to_tube
-                    pokuta = 10000000;
+                    pokuta = 1000000000;
                 end
                 
-                fitnes(population_index) = pokuta - prejdena_vzdialenost - 5^Score;
+                fitnes(population_index) = pokuta - prejdena_vzdialenost - 10^Score;
                 population_index = population_index + 1;
             end
             
